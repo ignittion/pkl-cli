@@ -27,11 +27,10 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: |
-            jesscarlos/pkl-cli
+          images: jesscarlos/pkl-cli
           tags: |
-            type=semver,pattern={{version}},value=${{ matrix.version }}
             type=raw,value=latest,enable=${{ matrix.version == vars.LATEST_VERSION }}
+            type=semver,pattern={{version}},value=${{ matrix.version }}
           labels: |
             maintainer=Jess Carlos
             org.opencontainers.image.title=PKL-CLI
