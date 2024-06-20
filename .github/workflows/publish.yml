@@ -15,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        version: [ "0.25.2", "0.25.3" ]
+        version: [ "0.25.3", "0.26.0" ]
 
     steps:
 
