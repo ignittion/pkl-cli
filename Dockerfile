@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ARG VERSION=0.25.2
+ARG VERSION=0.26.0
 
 RUN apk add --no-cache curl libc6-compat tini
 
