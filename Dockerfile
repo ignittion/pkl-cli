@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 ARG TARGETPLATFORM
-ARG VERSION=0.26.0
+ARG VERSION=0.26.3
 
 RUN apk add --no-cache curl libc6-compat tini \
     && echo $([ "$TARGETPLATFORM" == "linux/amd64" ] && echo "amd64" || echo "aarch64") > /platform
