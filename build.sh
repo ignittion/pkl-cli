@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 latest=${1:-0.26.3}
-versions=("0.26.2" "0.26.1")
+versions=("0.26.3" "0.26.2" "0.26.1")
 repo="jesscarlos/pkl-cli"
 
 for version in "${versions[@]}"
