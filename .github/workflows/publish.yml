@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        version: [ "0.26.3", "0.26.2", "0.26.1" ]
+        version: ${{ fromJSON(vars.PKL_RELEASES) }}
 
     steps:
 
