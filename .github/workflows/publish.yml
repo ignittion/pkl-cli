@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        version: ${{ fromJSON(vars.PKL_RELEASES) }}
+        version: ${{ fromJson(vars.PKL_RELEASES) }}
 
     steps:
 
